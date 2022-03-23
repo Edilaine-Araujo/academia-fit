@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Fit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Linden+Hill&family=Shadows+Into+Light&display=swap" rel="stylesheet"
+</head>
+<body>
+    <header class="black">
+        <h1 class="titulo"><a href="./Nova.html">ACADEMIA</a></h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="./">Unidades</a></li>
+                <li><a href="./">Planos</a></li>
+                <li><a href="#contato" href="./">Contato</a></li>
+                <li><a href="./Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <img class="img-1" src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" alt="fileira de halteres"/>
+        <main>
+            <h2>Nossa história</h2>
+            <p>Somos a Academia Fit, a maior academia da America Latina com mais de 205 unidades em todo pais. Nosso foco é fazer com que mais pessoas possam treinar com um preço acessível e de que cada vez mais tenha uma unidade mais próxima de você. Nossos preços varias de acordo com o seu foco e sua a disponibilidade sendo ajustavel para o seu bolso. Venha e faça um orçamento com a gente.</p>
+            <span><p class="slogan">#VemSerFit</p></span>
+        </main>
+    </section>
+    <span class="linha">  </span>
+    <section class="depoimentos" aria-label="depoimentos">
+        <h3>QUEM CONHECE, APROVA!</h3>
+        <div class="depoimentos-pessoas">
+            <img class="img-emoji" src="./img/maria.jpg"/>
+            <h4>Maria Joana</h4>
+            <p>"Melhor academia que já fui, tudo perfeito!"</p>
+        </div>
+        <div class="depoimentos-pessoas">
+            <img class="img-emoji" src="./img/joao.jpg"/>
+            <h4>João Paulo</h4>
+            <p>"Equipamenetos novos e sempre bem limpos, nunca tive nenhum problema com a rede, funcionários sempre genties e prestativos, só tenho o que elogiar"</p>
+        </div>
+        <div class="depoimentos-pessoas">
+            <img class="img-emoji" src="./img/pedro.jpg"/>
+            <h4>Pedro da Silva</h4>
+            <p>"Nunca frequentei outra academia por causa do preço, sempre achei caro, não fazia sentido pagar o mês inteiro sendo que eu só utilizava 2 vezes na semana. Não tenho o que reclamar."</p>
+        </div>
+        <div class="depoimentos-pessoas">
+            <img class="img-emoji" src="./img/ana.jpg"/>
+            <h4>Ana Lucia</h4>
+            <p>"Finalmente encontrei a uma academia do meu jeito que se adapte e que sempre cumpre com o prometido."</p>
+        </div>
+    </section>
+    <section class="contatos" id="contato">
+        <h3>Contatos</h3>
+        <div class="flex-contato">
+            <p>Telefone fixo <span class="espaco1">(11) 9999-999</span></p>
+            <p>E-mail <span class="espaco2">contato@academiafit.com.br</span></p>
+            <p>Whatsapp<span class="espaco3">(11) 9999-999</span></p>
+        </div>
+        <div>
+            <nav class="nav-contatos">
+                <ul>
+                    <li><a href="http://www.instagram.com"><img class="icone" src="https://cdn.worldvectorlogo.com/logos/instagram-2-1.svg" alt="instagram"></a></li>
+                    <li><a href="http://www.youtube.com"><img class="icone" src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="youtube"></a></li>
+                    <li><a href="http://www.facebook.com"> <img class="icone" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/300px-Facebook_icon_2013.svg.png" alt="facebook"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</body>
+<style>
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(240, 245, 250, 0.06);
+}
+
+.img-1{
+    max-width: 80%;
+    justify-self: center;
+    border-radius: 5px;
+    min-width: 70%;
+}
+
+h1 {
+    font-family: 'Linden Hill', serif;
+    font-size: 2.812rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1 a {
+    color: rgba(183, 219, 250, 0.884);
+}
+
+ul {
+    font-family: 'Linden Hill', serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: right;
+    font-size: 1.125rem;
+    margin-top: -4rem;
+    margin-right: 1rem;
+    max-width: 1200px;
+}
+
+a {
+    color: white;
+    padding: 10px 10px;
+}
+
+.black {
+    background-color: black;
+    padding: 0.50rem;
+    /* width: 150vw; */
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 1px 1px #0000001a;
+    z-index: 1;
+}
+
+
+@media (max-width: 720px) {
+
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 7rem 7rem 4rem 7rem;
+    max-width: 1200px;
+}
+
+.main h2 {
+    font-size: 2rem;
+    font-family: 'Linden Hill', serif;
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h2::before {
+    content: "";
+    padding: 1rem 1rem;
+    background-color: rgba(183, 219, 250, 0.884);
+}
+
+.main p {
+    /* font-style: italic;   não pega */ 
+    font-family: 'Heebo', sans-serif;
+    text-align: right;
+    font-size: 1.25rem;
+}
+
+.main .slogan {
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    margin: 6rem;
+    font-size: 4.375rem;
+}
+
+main {
+    grid-row: 1;
+}
+
+
+.main .slogan::after{
+    content: "";
+    display: inline;
+    padding: 250px 10px;
+    background-color: rgba(183, 219, 250, 0.884); /* pq a cor fica transparente na imagem? */
+    /* position: fixed; <-- não tem como (fixa na tela e não some ao rolar a tela) */
+    position: absolute; /* problema = sobressai a barra fixa ".black" */
+    left: 53.50vw;
+    bottom: 19vh;
+}
+
+.linha {
+    content: "";
+    display: inline-block;
+    padding: 1px;
+    width: 80%;
+    margin: 0rem 5rem 1rem 5rem;
+    background: linear-gradient(0.25turn, #9eecf7, #e0f2f5, #9eecf7);
+}
+
+
+/* @keyframes slogan {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+} */
+
+.depoimentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: 'Heebo', sans-serif;
+    padding: 0rem 4rem 4rem 4rem;
+    gap: 2rem;
+    max-width: 1200px;
+}
+
+
+h3 {
+    text-align: center;
+    font-family: 'Linden Hill', serif;
+    font-size: 2.5rem;
+    padding: 4rem;
+    grid-column: 1 / -1;
+}
+
+.depoimentos-pessoas { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.depoimentos-pessoas h4 {
+    font-size: 1.50rem;
+    font-family: 'Linden Hill', serif;
+    display: inline;
+    width: 200px;
+    height: 40px;
+    margin: 8px 8px;
+}
+
+.depoimentos-pessoas p {
+    grid-column: 1 / -1;
+    font-size: 1rem;
+    height: 100px;
+}
+
+
+.img-emoji {
+    display: block;
+    padding: 0.50rem;
+    max-width: 65%;
+    border: 1px #0000001a solid;
+    border-radius: 50%;
+}
+
+.contatos {
+    background-color: black;
+    padding: 3rem;
+    margin-top: 6rem;
+}
+
+.flex-contato {
+    width: 450px;
+}
+
+.flex-contato p {
+    font-size: 1.30rem;
+}
+
+.espaco1 {
+    display: inline-block;
+    padding-left: 70px;
+    font-size: 1rem;
+    color: rgb(170, 170, 170);
+}
+
+.espaco2 {
+    display: inline-block;
+    padding-left: 123px;
+    font-size: 1rem;
+    color: rgb(170, 170, 170);
+}
+
+.espaco3 {
+    display: inline-block;
+    padding-left: 102px;
+    font-size: 1rem;
+    color: rgb(170, 170, 170);
+}
+
+.contatos h3 {
+    color: white;
+    margin-top: -4rem;
+    text-transform: uppercase;
+}
+
+.contatos p {
+    color: white;   
+    padding: 10px;
+}
+
+.icone {
+    height: 38px;
+    width: 38px;
+}
+
+</style>
+</html>
+

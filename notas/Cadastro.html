@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Academia Fit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Linden+Hill&family=Shadows+Into+Light&display=swap" rel="stylesheet"
+</head>
+<body>
+    <div class="black">
+        <h1 class="titulo"><a href="./Nova.html">ACADEMIA</a></h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="./">Unidades</a></li>
+                <li><a href="./">Planos</a></li>
+                <li><a href="./">Contato</a></li>
+                <li><a href="./Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h2>Cadastro Academia Fit</h2> 
+    <form action="./" method="post">
+        <div class="formulario-cadastro">
+            <div class="questionario">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">  
+            </div>   
+            <div class="questionario">
+                <label for="idade">Nascimento</label>
+                <input type="date" name="nascimento" id="idade">
+            </div class="questionario">
+            <div class="questionario">
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="email" id="e-mail">
+            </div>  
+            <div class="questionario">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+            </div>       
+            <div class="questionario">
+                <label for="pratica-exercicios">Pratica exercicios regularmente?</label>
+                <div class="questionario-box">
+                    <input type="checkbox" name="exercicios-regulares" value="nao" id="pratica-exercicios">
+                    <label for="pratica-exercicios">Não</label>
+                    <input type="checkbox" name="exercicios-regulares" value="sim" id="pratica-exercicios">
+                    <label for="pratica-exercicios">Sim</label>
+                </div>
+            </div>       
+            <div class="questionario">
+                <label for="cardioco">Possui problemas cardiocos?</label>
+                <div class="questionario-box">
+                    <input type="checkbox" name="cardioco" value="nao" id="cardioco">
+                    <label for="cardioc">Não</label>
+                    <input type="checkbox" name="cardioco" value="sim" id="cardioco">
+                    <label for="cardioc">Sim</label>
+                </div>
+            </div>       
+            <div class="questionario">
+                <label for="deficiente">Possui alguma deficiência?</label>
+                <div class="questionario-box">
+                    <input type="checkbox" name="deficiente" value="nao" id="deficiente">
+                    <label for="deficiente">Não</label>
+                    <input type="checkbox" name="deficiente" value="sim" id="deficiente">
+                    <label for="deficiente">Sim</label>
+                </div>
+            </div>
+            <div class= "questionario">
+                <label for="impedimento-medico">Possui Algum impeditivo médico?</label>
+                <div class= "questionario-box">
+                    <input type="checkbox" name="impedimento-medico" value="nao" id="impedimento-medico">
+                    <label for="impedimento-medico">Não</label>
+                    <input type="checkbox" name="impedimento-medico" value="sim" id="impedimento-medico">
+                    <label for="impedimento-medico">Sim</label>
+                </div>
+            </div>
+            <div class="questionario">
+                <label for="frequencia-academia">Já frequentou alguma academia?</label>
+                <div class= "questionario-box">
+                    <input type="checkbox" name="frequencia-academia" value="nao" id="frequencia-academia">
+                    <label for="frequencia-academia">Não</label>
+                    <input type="checkbox" name="frequencia-academia" value="sim" id="frequencia-academia">
+                    <label for="frequencia-academia">Sim</label> <br>
+                </div> 
+                <div class="box">
+                    <label for="tempo-de-frequencia">Nos conte quanto tempo frequentou e a quanto tempo não frequenta mais</label> <br>
+                    <input type="text" name="tempo-de-frequencia" id="frequencia">
+                </div>      
+            </div>    
+        </div> 
+        <submit><button>Enviar</button></submit>             
+    </form>
+</body>   
+</html>
+<style>
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Linden Hill', serif;
+    font-size: 2.812rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1 a {
+    color: rgba(183, 219, 250, 0.884);
+}
+
+ul {
+    font-family: 'Linden Hill', serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: right;
+    font-size: 1.125rem;
+    margin-top: -4rem;
+    margin-right: 1rem;
+}
+
+.nav a {
+    color: white;
+}
+
+.black {
+    background-color: black;
+    padding: 0.50rem;
+    position: sticky;
+    top: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 4rem;
+    font-family: 'Linden Hill', serif;
+    font-size: 3rem;
+}
+
+.formulario-cadastro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem;
+    font-size: 1.25rem;
+    background-color: aliceblue;
+    max-width: 90%;
+    border-radius: 5px;
+}
+
+.questionario {
+    margin: 1.5rem;
+    display: grid;
+    max-width: 100%;
+}
+
+.questionario-box {
+    display: inline;
+    text-align: left;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.questionario-box input {
+    display: inline;
+    width: 5%;
+}
+
+.box {
+    margin-top: 1rem;
+}
+
+.box input {
+    padding: 3rem;
+    text-align: start;
+}
+
+input {
+    border: 0,062rem #333 solid;
+    width: 70%;
+}
+
+button {
+    margin-left: 50%;
+    margin-top: -50%;
+    margin-bottom: 2%;
+    padding: 0.80rem;
+}
+
+</style>

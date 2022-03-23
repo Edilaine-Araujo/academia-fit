@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Academia Fit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Linden+Hill&family=Shadows+Into+Light&display=swap" rel="stylesheet"
+</head>
+<body>
+    <div class="black">
+        <h1 class="titulo"><a href="./Nova.html">ACADEMIA</a></h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="./">Unidades</a></li>
+                <li><a href="./">Planos</a></li>
+                <li><a href="./">Contato</a></li>
+                <li><a href="./Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h2>login</h2>
+    <div class="login">    
+        <form action="./" method="post">
+            <div class="E-mail">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="E-mail" required>
+            </div>
+            <div class="Senha">
+                <label for="email">Senha</label>
+                <input type="password" name="senha" id="Senha" autocomplete="current-password" minlength="4" maxlength="8" size="8" required>
+            </div>
+            <div class="botao">
+                <submit><button>Entrar</button></submit>
+            </div>
+        </form> 
+            <div class="cadastra-se">
+                <p>Não possui conta <a href="./Cadastro.html">Cadastra-se</a></p>
+            </div>
+            </div>
+    </div> 
+        
+</body>
+<style>
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Linden Hill', serif;
+    font-size: 45px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1 a {
+    color: rgba(183, 219, 250, 0.884);
+}
+
+ul {
+    font-family: 'Linden Hill', serif;
+    display: flex;
+    gap: 1rem;
+    justify-content: right;
+    font-size: 18px;
+    margin-top: -4rem;
+    margin-right: 1rem;
+}
+
+.nav a {
+    color: white;
+}
+
+.black {
+    background-color: black;
+    padding: 0.50rem;
+    position: sticky;
+    top: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Linden Hill', serif;
+    margin: 4rem;
+}
+
+.login {
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+}
+
+.E-mail, 
+.Senha {
+    margin: 1rem;
+    font-family: 'Heebo', sans-serif;
+}
+
+input {
+    border: 1px #333 solid;
+    min-width: 200px;
+
+}
+
+.cadastra-se {
+    margin: 1rem;
+}
+
+p a {
+    text-decoration: underline;
+    color: rgb(199, 66, 66);
+}
+
+</style>
+</html>
